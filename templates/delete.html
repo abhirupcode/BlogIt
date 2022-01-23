@@ -1,0 +1,22 @@
+
+{% extends "base.html" %}
+
+{% block title %}Delete Account ?{% endblock %}
+
+{% block content %}
+<h3>Delete Account</h3>
+<form method="POST">
+	  <div class="input-group flex-nowrap">
+	  <span class="input-group-text" id="addon-wrapping">@</span>
+	  <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping" name="EMAIL">
+	</div>
+	<br>
+	<div id="passwordHelpBlock" class="form-text">
+	  Are you sure you want to delete your account?
+	</div>
+<button type="submit" class="btn btn-primary">Yes</button>
+</form>
+<button class="btn btn-primary">No</button>
+
+
+{% endblock %}
